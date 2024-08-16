@@ -1,13 +1,135 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  color: rgb(255, 255, 255);
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 18px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: black;
+}
+
+.list-table {
+  display: flex;
+  justify-content: center;
+}
+
+.table-head {
+  background-color: rgb(73, 73, 73);
+}
+
+.head-name {
+  text-align: center;
+}
+
+.table-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.low-priority {
+  background-color: rgb(42, 165, 58);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.medium-priority {
+  background-color: orange;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.high-priority {
+  background-color: brown;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.low-priority-square {
+  margin-top: 5px;
+  background-color: rgb(42, 165, 58);
+  width: 30px;
+  height: 30px;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.medium-priority-square {
+  margin-top: 5px;
+  background-color: orange;
+  width: 30px;
+  height: 30px;
+  border: 2px solid whitesmoke;
+}
+
+.high-priority-square {
+  margin-top: 5px;
+  background-color: brown;
+  width: 30px;
+  height: 30px;
+  border: 2px solid whitesmoke;
+}
+
+.priority-list {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.task-name {
+  background-color: whitesmoke;
+  padding: 10px;
+  margin: -10px;
+  margin-right: 0px;
+  width: 20%;
+  text-align: center;
+  align-items: center;
+  height: 45px;
+  color: rgb(0, 0, 0);
+
+}
+
+tr {
+  border: 1px solid whitesmoke;
+  width: 100%;
+}
+
+td {
+  width: 1200px;
+}
+
+p {
+  padding: 10px;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.delete-button {
+  padding: 5px;
+  width: 25px;
+  height: 25px;
+  color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  width: 42%;
+}
+
+tbody {
+  width: 100%
 }
